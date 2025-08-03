@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Icons CSS v5.2.1 -->
+    <link rel="stylesheet" href="./css/all.min.css" type="text/css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+
+    <style>
+        html body {
+            background-color: rgba(169, 169, 169, 0.211);
+        }
+
+        .divider {
+            height: 100px;
+        }
+
+        .hero .main-content .row .col-2 a {
+            transition: all .4s ease !important;
+        }
+
+        .hero .main-content .row .col-2 a:hover {
+            text-decoration: underline !important;
+        }
+
+        .hero .main-content form input,
+        .hero .main-content form .dropdown .btn {
+            outline: none;
+        }
+
+        .hero .main-content form #submit {
+            opacity: .8;
+            transition: all .5s ease;
+        }
+
+        .hero .main-content form #submit:hover {
+            opacity: 1;
+        }
+
+        .hero-circle {
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .popular .popular-header a,
+        .offers .offers-header a,
+        .eat .eat-header a {
+            transition: all .8s ease !important;
+        }
+
+        .popular .popular-header a:hover,
+        .offers .offers-header a:hover,
+        .eat .eat-header a:hover,
+        .eat .eat-body h4:hover,
+        footer h2 span:hover,
+        footer a:hover
+        {
+            text-decoration: underline !important;
+            color: #000000;
+        }
+
+
+        .popular .popular-body .carousel .carousel-item .card,
+        .popular .popular-body .carousel .carousel-item .card .like-btn {
+            transition: all .4s ease !important;
+        }
+
+        .popular .popular-body .carousel .carousel-item .card:hover .like-btn {
+            opacity: 1 !important;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .hero-circle-left {
+                top: 0;
+                left: 0;
+                transform: translateX(0%);
+            }
+
+            .hero-circle-right {
+                top: 10%;
+                right: 0;
+                transform: translateX(0%);
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            .hero-circle-left {
+                top: 0;
+                left: -150px;
+            }
+
+            .hero-circle-right {
+                top: 0;
+                right: -150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="./images/logo.svg" alt="logo" class="img-fluid">
+                    <span class="fw-semibold">Finder</span>
+                </div>
+                <button type="button" class="navbar-toggler float-start" data-bs-target="#nav-collapse"
+                    data-bs-toggle="collapse" aria-label="Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="nav-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active text-capitalize" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-capitalize">listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-capitalize">acount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-capitalize">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-capitalize">docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-capitalize">components</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-buttons d-flex align-items-center">
+                    <i class="fa-solid fa-sun fw-light me-3"></i>
+                    <i class="fa-solid fa-user fw-light me-3"></i>
+                    <a href="" class="btn btn-danger text-capitalize text-decoration-none text-white p-2 rounded-pill">
+                        <i class="fa-solid fa-plus text-white fw-lighter me-1"></i>
+                        add busniness
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--::::: Hero Section Starts :::::-->
+        <section class="hero overflow-hidden bg-secondary-subtle">
+            <!-- <div class="hero-circle hero-circle-left d-none d-md-block">
+                <img src="./images/hero-left-image.png" alt="hero-left-image"
+                    class="img-fluid object-fit-cover w-100 h-100">
+                <span class="dot-blue position-absolute rounded-circle bg-primary-subtle"
+                    style="width: 100px; height: 100px; top: 50%; left: 70%;"></span>
+            </div> -->
+            <div class="container">
+                <div class="main-content py-5 z-3">
+                    <h1 class="display-4 text-center text-capitalize fw-bold mb-3">Start exploring Barcelona</h1>
+                    <p class="text-center text-capitalize text-secondary mb-5">Find great places to stay, eat, shop, or
+                        visit from our respected <br> partners and local experts.</p>
+
+                    <form action="" method="get" class="border border-1 border-secondary rounded-3 p-3">
+                        <i class="fa-solid fa-magnifying-glass text-secondary-emphasis me-2"></i>
+                        <input type="search" name="text" id="Search" placeholder="What are you lookig for?"
+                            class="border-0 border-end border-2 bg-secondary-subtle" style="width: 60%;">
+                        <div class="dropdown text-decoration-none d-inline-block" style="width: 34%;">
+                            <button type="button"
+                                class="btn btn-outline-light border-0 w-100 text-start d-flex align-items-center justify-content-between"
+                                data-bs-toggle="dropdown" data-bs-target="#category-dropdown">
+                                <span class="text-capitalize text-secondary">
+                                    <i class="fa-solid fa-border-all text-secondary-emphasis me-2"></i>
+                                    category</span>
+                                <ul class="dropdown-menu" id="category-dropdown">
+                                    <li class="dropdown-item">
+                                        <a href=""
+                                            class="dropdown-item-text text-capitalize text-decoration-none">accommodation</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href=""
+                                            class="dropdown-item-text text-capitalize text-decoration-none">shopping</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="" class="dropdown-item-text text-capitalize text-decoration-none">food
+                                            & drink</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href=""
+                                            class="dropdown-item-text text-capitalize text-decoration-none">entertainment</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href=""
+                                            class="dropdown-item-text text-capitalize text-decoration-none">health</a>
+                                    </li>
+                                </ul>
+                                <i class="fa-solid fa-angle-down text-secondary-emphasis"></i>
+                            </button>
+                        </div>
+
+                        <button type="submit" id="submit"
+                            class="btn btn-danger rounded-pill text-capitalize d-block py-2 mt-3 w-100">Search</button>
+                    </form>
+
+                    <div class="row justify-content-between text-center pt-3 mt-5 z-2">
+                        <div class="col-2">
+                            <div class="position-relative d-inline-block bg-danger-subtle rounded-circle ms-2"
+                                style="width: 90px; height: 90px;">
+                                <img src="./images/hero-accommodation.svg" alt="hero-accommodation"
+                                    class="img-fluid position-absolute bottom-0 end-0 translate-middle-x text-center">
+                            </div>
+                            <a href=""
+                                class="text-decoration-none text-dark fw-normal text-capitalize d-block mt-3">accommodation</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="position-relative d-inline-block bg-success-subtle rounded-circle ms-2"
+                                style="width: 90px; height: 90px;">
+                                <img src="./images/hero-shopping.svg" alt="hero-accommodation"
+                                    class="img-fluid position-absolute bottom-0 end-0 translate-middle-x text-center">
+                            </div>
+                            <a href=""
+                                class="text-decoration-none text-dark fw-normal text-capitalize d-block mt-3 ms-3">shopping</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="position-relative d-inline-block bg-warning-subtle rounded-circle"
+                                style="width: 90px; height: 90px;">
+                                <img src="./images/hero-food-and-drink.svg" alt="hero-accommodation"
+                                    class="img-fluid position-absolute bottom-0 end-0 translate-middle-x text-center">
+                            </div>
+                            <a href=""
+                                class="text-decoration-none text-dark fw-normal text-capitalize d-block mt-3 ">food &
+                                drink</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="position-relative d-inline-block bg-success-subtle rounded-circle ms-2"
+                                style="width: 90px; height: 90px;">
+                                <img src="./images/hero-entertainment.svg" alt="hero-accommodation"
+                                    class="img-fluid position-absolute bottom-0 end-0 translate-middle-x text-center">
+                            </div>
+                            <a href=""
+                                class="text-decoration-none text-dark fw-normal text-capitalize d-block mt-3">entertainment</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="position-relative d-inline-block bg-warning-subtle rounded-circle"
+                                style="width: 90px; height: 90px;">
+                                <img src="./images/hero-health.svg" alt="hero-accommodation"
+                                    class="img-fluid position-absolute bottom-0 end-0 translate-middle-x text-center">
+                            </div>
+                            <a href=""
+                                class="text-decoration-none text-dark fw-normal text-capitalize d-block mt-3 ms-4">health</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-circle hero-circle-right d-none d-md-block z-0">
+                <img src="./images/hero-right-image.png" alt="hero-right-image"
+                    class="img-fluid object-fit-cover w-100 h-100">
+                <span class="dot-red position-absolute rounded-circle bg-danger-subtle"
+                    style="width: 100px; height: 100px; top: 50%; right: 80%;"></span>
+            </div> -->
+        </section>
+        <!--::::: Hero Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Popular Section Starts :::::-->
+        <section class="popular">
+            <div class="container">
+                <div class="popular-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold text-capitalize">Popular vacation spots</h2>
+                    <a href=""
+                        class="text-capitalize text-secondary text-decoration-none d-inline-block fs-5 fw-semibold">
+                        view all
+                        <i class="fa-solid fa-angle-right text-secondary"></i>
+                    </a>
+                </div>
+                <div class="popular-body">
+                    <div class="carousel slide" id="multi-carousal-popular" data-bs-parent="carousel">
+                        <div class="carousel-indicators bg-light" style="top: 100%;">
+                            <button type="button" data-bs-target="#multi-carousal-popular"
+                                class="active rounded-circle bg-danger" data-bs-slide-to="0" aria-current="true"
+                                aria-label="Slide 1" style="width: 10px; height: 10px;"></button>
+                            <button type="button" data-bs-target="#multi-carousal-popular"
+                                class="bg-danger rounded-circle" data-bs-slide-to="1" aria-label="Slide 2"
+                                style="width: 10px; height: 10px;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./images/popular-image-1.png" alt="popular-image-1"
+                                            class="img-fluid rounded-4">
+                                        <h4 class="my-3 fw-semibold">Pine Cottage</h4>
+                                        <p class="text-secondary text-secondary">
+                                            <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                            4.9 (135)
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                                $$$
+                                            </span>
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-location-dot border border-1"></i>
+                                                0.8 km from center
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./images/popular-image-2.png" alt="popular-image-2"
+                                            class="img-fluid rounded-4">
+                                        <h4 class="my-3 fw-semibold text-capitalize">big tree cottage</h4>
+                                        <p class="text-secondary text-secondary">
+                                            <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                            4.5 (73)
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                                $$
+                                            </span>
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-location-dot border border-1"></i>
+                                                2.4 km from center
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./images/popular-image-2.png" alt="popular-image-2"
+                                            class="img-fluid rounded-4">
+                                        <h4 class="my-3 fw-semibold text-capitalize">big tree cottage</h4>
+                                        <p class="text-secondary text-secondary">
+                                            <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                            4.5 (73)
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                                $$
+                                            </span>
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-location-dot border border-1"></i>
+                                                2.4 km from center
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./images/popular-image-3.png" alt="popular-image-3"
+                                            class="img-fluid rounded-4">
+                                        <h4 class="my-3 fw-semibold text-capitalize">crystal studio apartment</h4>
+                                        <p class="text-secondary text-secondary">
+                                            <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                            4.7 (26)
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                                $$
+                                            </span>
+                                            <span class="text-secondary ms-3">
+                                                <i class="fa-solid fa-location-dot border border-1"></i>
+                                                1.3 km from center
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--::::: Popular Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Offers Section Starts :::::-->
+        <section class="offers">
+            <div class="container">
+                <div class="offers-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Top offers</h2>
+                    <a href=""
+                        class="text-capitalize text-secondary text-decoration-none d-inline-block fs-5 fw-semibold">
+                        view all
+                        <i class="fa-solid fa-angle-right text-secondary"></i>
+                    </a>
+                </div>
+                <div class="offers-body">
+                    <div class="carousel slide" id="multi-carousal-offers" data-bs-parent="carousel">
+                        <div class="carousel-indicators bg-light" style="top: 100%;">
+                            <button type="button" data-bs-target="#multi-carousal-offers"
+                                class="active rounded-circle bg-danger" data-bs-slide-to="0" aria-current="true"
+                                aria-label="Slide 1" style="width: 10px; height: 10px;"></button>
+                            <button type="button" data-bs-target="#multi-carousal-offers"
+                                class="bg-danger rounded-circle" data-bs-slide-to="1" aria-label="Slide 2"
+                                style="width: 10px; height: 10px;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./images/Top-offers-image-1.png" alt="offers-image-1"
+                                            class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./images/Top-offers-image-2.png" alt="offers-image-2"
+                                            class="img-fluid rounded-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./images/Top-offers-image-2.png" alt="offers-image-2"
+                                            class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./images/Top-offers-image-3.png" alt="offers-image-3"
+                                            class="img-fluid rounded-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--::::: Offers Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Events Barcelona Section Starts :::::-->
+        <section class="events-barcelona">
+            <div class="container">
+                <div class="events-barcelona-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Upcoming events in Barcelona</h2>
+                    <div class="event-carousel-buttons">
+                        <button type="button" class="btn btn-outline-secondary py-3 px-4 rounded-circle me-2"
+                            data-bs-target="#event-carousel" data-bs-slide="prev">
+                            <span class="border-2" aria-hidden="true">
+                                <i class="fa-solid fa-angle-right" style="transform: rotate(180deg);"></i>
+                            </span>
+                            <span class="visually-hidden">Previus Button</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary py-3 px-4 rounded-circle ms-2"
+                            data-bs-target="#event-carousel" data-bs-slide="next">
+                            <span class="" aria-hidden="true">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                            <span class="visually-hidden">Next Button</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="position-relative" style="height: 500px;">
+                    <div class="position-absolute top-0 end-0 h-100 w-100 border border-3 border-black rounded"></div>
+                    <div class="position-absolute top-50 translate-middle-y mx-auto" style="width: 850px; left: -5%;">
+                        <div class="carousel slide" id="event-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active bg-secondary-subtle">
+                                    <img src="./images/events-imgae-1.png" alt="events-imgae-1" class="img-fluid">
+                                    <div class="carousel-caption text-start" style="left: 50px;">
+                                        <i class="fa-regular fa-calendar text-secondary fw-lighter"></i>
+                                        <span class="text-secondary ms-1">Nov 15</span>
+                                        <i class="fa-regular fa-clock text-secondary fw-lighter ms-3"></i>
+                                        <span class="text-secondary">19:00</span>
+                                        <h3 class="text-black text-capitalize mt-2 mb-3 fw-bold">simon blues concert
+                                        </h3>
+                                        <button type="button" class="btn btn-danger py-3 px-4 rounded-pill">
+                                            <span class="fw-semibold me-2">Tickets from $60</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item bg-secondary-subtle">
+                                    <img src="./images/events-image-2.png" alt="events-imgae-2" class="img-fluid">
+                                    <div class="carousel-caption text-start" style="left: 50px;">
+                                        <i class="fa-regular fa-calendar text-secondary fw-lighter"></i>
+                                        <span class="text-secondary ms-1">Oct 28</span>
+                                        <i class="fa-regular fa-clock text-secondary fw-lighter ms-3"></i>
+                                        <span class="text-secondary">21:00</span>
+                                        <h3 class="text-white text-capitalize mt-2 mb-3 fw-bold">the concert in palau
+                                            sant jordi
+                                        </h3>
+                                        <button type="button" class="btn btn-danger py-3 px-4 rounded-pill">
+                                            <span class="fw-semibold me-2">Tickets from $45</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item bg-secondary-subtle">
+                                    <img src="./images/events-image-3.png" alt="events-imgae-3" class="img-fluid">
+                                    <div class="carousel-caption text-start" style="left: 50px;">
+                                        <i class="fa-regular fa-calendar text-secondary fw-lighter"></i>
+                                        <span class="text-secondary ms-1">Sep 7</span>
+                                        <i class="fa-regular fa-clock text-secondary fw-lighter ms-3"></i>
+                                        <span class="text-secondary">8:30</span>
+                                        <h3 class="text-white text-capitalize mt-2 mb-3 fw-bold">damce about passion:
+                                            tango show
+                                        </h3>
+                                        <button type="button" class="btn btn-danger py-3 px-4 rounded-pill">
+                                            <span class="fw-semibold me-2">Tickets from $50</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--::::: Events Barcelona Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Where To Eat Section Starts :::::-->
+        <section class="eat">
+            <div class="container">
+                <div class="eat-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Where to eat</h2>
+                    <a href=""
+                        class="text-capitalize text-secondary text-decoration-none d-inline-block fs-5 fw-semibold">
+                        view all
+                        <i class="fa-solid fa-angle-right text-secondary"></i>
+                    </a>
+                </div>
+                <div class="eat-body py-4">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 d-flex mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-1.png" alt="eat-image-1" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold">Mado</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.7 <sub>(113)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $50
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    2.5 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-2.png" alt="eat-image-2" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">hard rock cafe</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    3.9 <sub>(18)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $45
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    6.2 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-3.png" alt="eat-image-3" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">sbarro</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.8 <sub>(128)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $60
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    5.7 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-4.png" alt="eat-image-4" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">mcDonald's</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.9 <sub>(836)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $25
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    1.4 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-5.png" alt="eat-image-5" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">teco bell</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.2 <sub>(83)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $20
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    2.2 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-6.png" alt="eat-image-6" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">el pollo loco</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.4 <sub>(275)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $35
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    2.3 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-7.png" alt="eat-image-7" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">jack resturant</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.9 <sub>(48)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $50
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    1.3 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-8.png" alt="eat-image-8" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">tacoTime</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.6 <sub>(179)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $25
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    4.8 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-flex ps-4 mb-4 align-items-center">
+                            <div class="eat-image p-3 bg-secondary-subtle rounded text-center">
+                                <img src="./images/eat-image-9.png" alt="eat-image-9" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-5">
+                                <h4 class="fw-bold text-capitalize">domino's pizza</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.5 <sub>(481)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $30
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    1.7 km from center
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--::::: Where To Eat Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Best Of Barcelona Section Starts :::::-->
+        <section class="best">
+            <div class="container">
+                <div class="best-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Best of Barcelona</h2>
+                    <a href=""
+                        class="text-capitalize text-secondary text-decoration-none d-inline-block fs-5 fw-semibold">
+                        view all
+                        <i class="fa-solid fa-angle-right text-secondary"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="position-relative mx-auto border border-3 border-black rounded"
+                style="height: 700px; width: 1000px;">
+                <div
+                    class="row justify-content-between position-absolute translate-middle-y top-50 start-0 end-0 translate-middle-y translate-middle-y">
+                    <div class="col-lg-5 bg-secondary-subtle">
+                        <h3 class="p-4 border-bottom border-2 border-secondary fw-bold">Top restaurants</h3>
+                        <!-- Sbbaro -->
+                        <div class="restaurants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image p-3 bg-white rounded d-inline-block">
+                                <img src="./images/restaurants-image-1.png" alt="restaurants-image-1" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold text-capitalize">sbarro</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.8 <sub>(128)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $60
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    5.7 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Mardo -->
+                        <div class="resturants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image p-3 bg-white rounded d-inline-block">
+                                <img src="./images/restaurants-image-2.png" class="img-fluid" alt="restaurants-image-2">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold">Mado</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.7 <sub>(113)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $50
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    2.5 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Tacotime -->
+                        <div class="resturants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image p-3 bg-white rounded d-inline-block">
+                                <img src="./images/restaurants-image-3.png" alt="restaurants-image-3" class="img-fluid">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold text-capitalize">tacoTime</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.6 <sub>(179)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $25
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    4.8 km from center
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 bg-secondary-subtle offset-2">
+                        <h3 class="p-4 border-bottom border-2 border-secondary fw-bold">Places to visit</h3>
+                        <!-- Sbbaro -->
+                        <div class="restaurants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image bg-white rounded d-inline-block">
+                                <img src="./images/visit-image-1.png" alt="visit-image-1" class="img-fluid rounded-2">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold text-capitalize">sbarro</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.8 <sub>(128)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $60
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    5.7 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Mardo -->
+                        <div class="resturants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image bg-white rounded d-inline-block">
+                                <img src="./images/visit-image-2.png" class="img-fluid rounded-2" alt="visit-image-2">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold">Mado</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.7 <sub>(113)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $50
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    2.5 km from center
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Tacotime -->
+                        <div class="resturants d-flex ps-4 my-4 align-items-center">
+                            <div class="eat-image bg-white rounded d-inline-block">
+                                <img src="./images/visit-image-3.png" alt="visit-image-3" class="img-fluid rounded-2">
+                            </div>
+                            <div class="eat-content d-inline-block ms-4">
+                                <h4 class="fw-bold text-capitalize">tacoTime</h4>
+                                <p class="">
+                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                    4.6 <sub>(179)</sub>
+                                </p>
+                                <span class="">
+                                    <i class="fa-solid fa-credit-card fw-lighter"></i>
+                                    $25
+                                </span>
+                                <span class="ms-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    4.8 km from center
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--::::: Best Of Barcelona Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Popular-Activities Section Starts :::::-->
+        <section class="popular-activities">
+            <div class="container">
+                <div class="popular-activities-header d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Popular activities</h2>
+                    <a href=""
+                        class="text-capitalize text-secondary text-decoration-none d-inline-block fs-5 fw-semibold">
+                        view all
+                        <i class="fa-solid fa-angle-right text-secondary"></i>
+                    </a>
+                </div>
+                <div class="popular-activities-body mt-5">
+                    <div class="carousel slide" id="Popular-activities-carousel" data-bs-ride="carousel">
+                        <div class="carousel-indicators" style="top: 100%;">
+                            <button type="button" class="active bg-danger rounded-circle" data-bs-slide-to="0"
+                                data-bs-target="#Popular-activities-carousel" aria-current="true" aria-label="Slide 1"
+                                style="width: 22px; height: 22px;"></button>
+                            <button type="button" class="bg-danger rounded-circle" data-bs-slide-to="1"
+                                data-bs-target="#Popular-activities-carousel" aria-label="Slide 2"
+                                style="width: 22px; height: 22px;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img src="./images/activites-image-1.png" alt="activites-image-1"
+                                                class="img-fluid rounded-2 position-relative">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                            <div class="card-body px-4">
+                                                <p
+                                                    class="card-subtitle p-2 bg-secondary-subtle text-black text-capitalize d-inline-block rounded mt-3">
+                                                    entertainment</p>
+                                                <h3 class="card-title text-capitalize my-2 fw-bold">barcelona national
+                                                    zoo</h3>
+                                                <p class="text-secondary fs-5 fw-semibold">Discover fascinating animals
+                                                    and a fun-filled <br>
+                                                    adventure
+                                                    for the whole family.</p>
+                                                <span class="">
+                                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                                    4.6 <sub>(7523)</sub>
+                                                </span>
+                                                <span class="ms-3">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    3.2 km from center
+                                                </span>
+                                                <h5 class="fw-semibold fs-3 text-black mt-3">
+                                                    $20
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img src="./images/activites-image-2.png" alt="activites-image-2"
+                                                class="img-fluid rounded-2 position-relative">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                            <div class="card-body px-4">
+                                                <p
+                                                    class="card-subtitle p-2 bg-secondary-subtle text-black text-capitalize d-inline-block rounded mt-3">
+                                                    entertainment</p>
+                                                <h3 class="card-title text-capitalize my-2 fw-bold">mountain lake tour
+                                                </h3>
+                                                <p class="text-secondary fs-5 fw-semibold">Enjoy breathtaking views,
+                                                    fresh air, and a peaceful <br> escape into the wilderness.</p>
+                                                <span class="">
+                                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                                    4.5 <sub>(214)</sub>
+                                                </span>
+                                                <span class="ms-3">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    13 km from center
+                                                </span>
+                                                <h5 class="fw-semibold fs-3 text-black mt-3">
+                                                    $60
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img src="./images/activites-image-3.png" alt="activites-image-3"
+                                                class="img-fluid rounded-2 position-relative">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                            <div class="card-body px-4">
+                                                <p
+                                                    class="card-subtitle p-2 bg-secondary-subtle text-black text-capitalize d-inline-block rounded mt-3">
+                                                    entertainment</p>
+                                                <h3 class="card-title text-capitalize my-2 fw-bold">jeep tour with 4x4
+                                                    club</h3>
+                                                <p class="text-secondary fs-5 fw-semibold">Explore the wild side of
+                                                    Barcelona in our reliable <br>off-road 4x4 vehicle!</p>
+                                                <span class="">
+                                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                                    4.7 <sub>(185)</sub>
+                                                </span>
+                                                <span class="ms-3">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    9.8 km from center
+                                                </span>
+                                                <h5 class="fw-semibold fs-3 text-black mt-3">
+                                                    $130
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <img src="./images/activites-image-4.png" alt="activites-image-3"
+                                                class="img-fluid rounded-2 position-relative">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                            <div class="card-body px-4">
+                                                <p
+                                                    class="card-subtitle p-2 bg-secondary-subtle text-black text-capitalize d-inline-block rounded mt-3">
+                                                    entertainment</p>
+                                                <h3 class="card-title text-capitalize my-2 fw-bold">art & design museum
+                                                </h3>
+                                                <p class="text-secondary fs-5 fw-semibold">Europe's most extensive
+                                                    collection of modern and <br>contemporary art.</p>
+                                                <span class="">
+                                                    <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
+                                                    4.9 <sub>(2078)</sub>
+                                                </span>
+                                                <span class="ms-3">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    1.4 km from center
+                                                </span>
+                                                <h5 class="fw-semibold fs-3 text-black mt-3">
+                                                    $15
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--::::: Popular-Activities Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: Finder Section Starts :::::-->
+        <section class="finder">
+            <div class="container">
+                <div class="box p-5 pb-0 bg-danger-subtle rounded-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="text-black text-capitalize fw-semibold my-3">download finder app</h3>
+                            <p class="">Discover all your travel essentials and more <br>with ease in the Finder app!
+                            </p>
+                            <button type="button" class="btn btn-dark rounded-4 p-3">
+                                <i class="fa-brands fa-apple"></i>
+                                <span class="ms-1 text-capitalize">app store</span>
+                            </button>
+                            <button type="button" class="btn btn-dark rounded-4 p-3 ms-3">
+                                <img src="./images/finder-play-store.svg" alt="finder-play-store" class="img-fluid">
+                                <span class="ms-1 text-capitalize">play store</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <img src="./images/finder-image-1.png" alt="finder-image-1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--::::: Finder Section Ends :::::-->
+
+        <div class="divider"></div>
+
+    </main>
+    <footer class="pt-5 text-bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="logo d-flex align-items-center mb-3">
+                        <img src="./images/logo.svg" alt="logo" class="img-fluid">
+                        <span class="fw-bold ms-3 fs-4">Finder</span>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="list-unstyled mb-2">
+                            <a href="" class="text-decoration-none text-white">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span class="ms-1">contact@example.com</span>
+                            </a>
+                        </li>
+                        <li class="list-unstyled ">
+                            <a href="" class="text-decoration-none text-white">
+                                <i class="fa-regular fa-phone-volume"></i>
+                                <span class="ms-1">+91 9106972039</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="fw-bold mb-3">Quickk links</h4>
+                    <ul class="list-unstyled">
+                        <li class="list-unstyled">
+                            <a href="" class="text-decoration-none text-white">Top cities</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Accommodation</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Cafes & restaurants</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Night clubs</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Events & meetups</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Beauty salons</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Pharmacies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="fw-bold mb-3">Profile</h4>
+                    <ul class="list-unstyled">
+                        <li class="list-unstyled">
+                            <a href="" class="text-decoration-none text-white">My account</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">My listings</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Gift cards</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Help center</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Taxes & fees</a>
+                        </li>
+                        <li class="list-unstyled my-2">
+                            <a href="" class="text-decoration-none text-white">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fw-bold my-4">Subscribe to our newsletter</h3>
+                    <form action="" class="text-secondary">
+                        <input type="email" name="email" id="email" class="form-control border-2 border-white bg-transparent rounded-pill w-50 d-inline-block" placeholder="your email">
+                        <button type="submit" class="btn btn-danger rounded-pill d-inline-block">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h3 class="text-secondary">Need help?<span class="text-white ms-3">Contact us</span></h3>
+                </div>
+                
+                <div class="col-md-4">
+                    <ul class="social-icons list-inline text-center">
+                        <li class="list-inline-item me-4 fs-5">
+                            <a href="" class="bg-transparent text-white" title="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-4 fs-5 fw-light">
+                            <a href="" class="bg-transparent text-white" title="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item fs-5">
+                            <a href="" class="bg-transparent text-white" title="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center text-secondary">© All rights reserved. Made by <a href="https://github.com/Dev-Shivam-05/" class="fw-bold text-decoration-none text-capitalize text-white ms-1">Mr.SDB</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+html body {
+  background-color: rgba(169, 169, 169, 0.211);
+}
+
+.divider {
+  height: 100px;
+}
+
+.hero .main-content .row .col-2 a {
+  transition: all 0.4s ease !important;
+}
+
+.hero .main-content .row .col-2 a:hover {
+  text-decoration: underline !important;
+}
+
+.hero .main-content form input,
+.hero .main-content form .dropdown .btn {
+  outline: none;
+}
+
+.hero .main-content form #submit {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.hero .main-content form #submit:hover {
+  opacity: 1;
+}
+
+.hero-circle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.popular .popular-header a,
+.offers .offers-header a,
+.eat .eat-header a {
+  transition: all 0.8s ease !important;
+}
+
+.popular .popular-header a:hover,
+.offers .offers-header a:hover,
+.eat .eat-header a:hover,
+.eat .eat-body h4:hover,
+footer h2 span:hover,
+footer a:hover {
+  text-decoration: underline !important;
+  color: #000000;
+}
+
+.popular .popular-body .carousel .carousel-inner .carousel-item .image {
+  overflow: hidden;
+}
+
+.popular .popular-body .carousel .carousel-inner .carousel-item .image img {
+  transition: all 0.4s ease;
+}
+
+.popular
+  .popular-body
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .image:hover
+  .like-btn {
+  opacity: 1 !important;
+}
+
+.popular .popular-body .carousel .carousel-item img:hover {
+  transform: scale(1.1);
+}
+
+.popular .popular-body .carousel .carousel-item .card,
+.popular .popular-body .carousel .carousel-item .card .like-btn {
+  transition: all 0.4s ease !important;
+}
+
+.popular .popular-body .carousel .carousel-item .card:hover .like-btn {
+  opacity: 1 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-circle-left {
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+  }
+
+  .hero-circle-right {
+    top: 10%;
+    right: 0;
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-circle-left {
+    top: 0;
+    left: -150px;
+  }
+
+  .hero-circle-right {
+    top: 0;
+    right: -150px;
+  }
+}

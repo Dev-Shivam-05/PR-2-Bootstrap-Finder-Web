@@ -11,100 +11,6 @@
     <link rel="stylesheet" href="./css/all.min.css" type="text/css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
-
-    <style>
-        html body {
-            background-color: rgba(169, 169, 169, 0.211);
-        }
-
-        .divider {
-            height: 100px;
-        }
-
-        .hero .main-content .row .col-2 a {
-            transition: all .4s ease !important;
-        }
-
-        .hero .main-content .row .col-2 a:hover {
-            text-decoration: underline !important;
-        }
-
-        .hero .main-content form input,
-        .hero .main-content form .dropdown .btn {
-            outline: none;
-        }
-
-        .hero .main-content form #submit {
-            opacity: .8;
-            transition: all .5s ease;
-        }
-
-        .hero .main-content form #submit:hover {
-            opacity: 1;
-        }
-
-        .hero-circle {
-            position: absolute;
-            height: 500px;
-            width: 500px;
-            border-radius: 50%;
-            overflow: hidden;
-            z-index: 0;
-        }
-
-        .popular .popular-header a,
-        .offers .offers-header a,
-        .eat .eat-header a {
-            transition: all .8s ease !important;
-        }
-
-        .popular .popular-header a:hover,
-        .offers .offers-header a:hover,
-        .eat .eat-header a:hover,
-        .eat .eat-body h4:hover,
-        footer h2 span:hover,
-        footer a:hover
-        {
-            text-decoration: underline !important;
-            color: #000000;
-        }
-
-
-        .popular .popular-body .carousel .carousel-item .card,
-        .popular .popular-body .carousel .carousel-item .card .like-btn {
-            transition: all .4s ease !important;
-        }
-
-        .popular .popular-body .carousel .carousel-item .card:hover .like-btn {
-            opacity: 1 !important;
-        }
-
-        @media screen and (min-width: 1200px) {
-            .hero-circle-left {
-                top: 0;
-                left: 0;
-                transform: translateX(0%);
-            }
-
-            .hero-circle-right {
-                top: 10%;
-                right: 0;
-                transform: translateX(0%);
-            }
-        }
-
-        @media screen and (max-width: 1199px) {
-            .hero-circle-left {
-                top: 0;
-                left: -150px;
-            }
-
-            .hero-circle-right {
-                top: 0;
-                right: -150px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -294,8 +200,15 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="./images/popular-image-1.png" alt="popular-image-1"
-                                            class="img-fluid rounded-4">
+                                        <div class="image rounded-4">
+                                            <img src="./images/popular-image-1.png" alt="popular-image-1"
+                                                class="img-fluid">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+
+                                        </div>
                                         <h4 class="my-3 fw-semibold">Pine Cottage</h4>
                                         <p class="text-secondary text-secondary">
                                             <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
@@ -311,8 +224,14 @@
                                         </p>
                                     </div>
                                     <div class="col-6">
-                                        <img src="./images/popular-image-2.png" alt="popular-image-2"
-                                            class="img-fluid rounded-4">
+                                        <div class="image rounded-4">
+                                            <img src="./images/popular-image-2.png" alt="popular-image-2"
+                                                class="img-fluid rounded-4">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                        </div>
                                         <h4 class="my-3 fw-semibold text-capitalize">big tree cottage</h4>
                                         <p class="text-secondary text-secondary">
                                             <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
@@ -332,8 +251,14 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="./images/popular-image-2.png" alt="popular-image-2"
-                                            class="img-fluid rounded-4">
+                                        <div class="image rounded-4">
+                                            <img src="./images/popular-image-2.png" alt="popular-image-2"
+                                                class="img-fluid rounded-4">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                        </div>
                                         <h4 class="my-3 fw-semibold text-capitalize">big tree cottage</h4>
                                         <p class="text-secondary text-secondary">
                                             <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
@@ -349,8 +274,14 @@
                                         </p>
                                     </div>
                                     <div class="col-6">
-                                        <img src="./images/popular-image-3.png" alt="popular-image-3"
-                                            class="img-fluid rounded-4">
+                                        <div class="image rounded-4">
+                                            <img src="./images/popular-image-3.png" alt="popular-image-3"
+                                                class="img-fluid rounded-4">
+                                            <span
+                                                class="like-btn position-absolute top-0 end-0 bg-white rounded-circle mt-4 me-4 d-flex justify-content-center align-items-center fs-3 opacity-0"
+                                                style="width: 50px; height: 50px;"><i
+                                                    class="fa-solid fa-heart"></i></span>
+                                        </div>
                                         <h4 class="my-3 fw-semibold text-capitalize">crystal studio apartment</h4>
                                         <p class="text-secondary text-secondary">
                                             <i class="fa-solid fa-star me-1" style="color: #daa520"></i>
@@ -514,6 +445,21 @@
             </div>
         </section>
         <!--::::: Events Barcelona Section Ends :::::-->
+
+        <div class="divider"></div>
+
+        <!--::::: New Section Starts :::::-->
+        <section class="new">
+            <div class="container">
+                <div class="new-header">
+                    <h2 class="fw-bold">What's new in Barcelona</h2>
+                </div>
+                <div class="new-body">
+
+                </div>
+            </div>
+        </section>
+        <!--::::: New Section Ends :::::-->
 
         <div class="divider"></div>
 
@@ -1139,7 +1085,9 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="fw-bold my-4">Subscribe to our newsletter</h3>
                     <form action="" class="text-secondary">
-                        <input type="email" name="email" id="email" class="form-control border-2 border-white bg-transparent rounded-pill w-50 d-inline-block" placeholder="your email">
+                        <input type="email" name="email" id="email"
+                            class="form-control border-2 border-white bg-transparent rounded-pill w-50 d-inline-block"
+                            placeholder="your email">
                         <button type="submit" class="btn btn-danger rounded-pill d-inline-block">Subscribe</button>
                     </form>
                 </div>
@@ -1149,7 +1097,7 @@
                 <div class="col-md-4">
                     <h3 class="text-secondary">Need help?<span class="text-white ms-3">Contact us</span></h3>
                 </div>
-                
+
                 <div class="col-md-4">
                     <ul class="social-icons list-inline text-center">
                         <li class="list-inline-item me-4 fs-5">
@@ -1170,7 +1118,9 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <p class="text-center text-secondary">© All rights reserved. Made by <a href="https://github.com/Dev-Shivam-05/" class="fw-bold text-decoration-none text-capitalize text-white ms-1">Mr.SDB</a></p>
+                    <p class="text-center text-secondary">© All rights reserved. Made by <a
+                            href="https://github.com/Dev-Shivam-05/"
+                            class="fw-bold text-decoration-none text-capitalize text-white ms-1">Mr.SDB</a></p>
                 </div>
             </div>
         </div>

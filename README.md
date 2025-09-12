@@ -1,5 +1,5 @@
 # 🔎 PR‑2‑Bootstrap‑Finder‑Web  
-
+ 
 Welcome to **PR‑2‑Bootstrap‑Finder‑Web** 🚀  
 This project is part of my web development journey as a **BSc IT Student** focusing on **Full‑Stack Development**.  
 It’s designed using **HTML, CSS, JavaScript, and Bootstrap 5**, delivering a **modern, responsive, and user‑friendly website structure**.  
